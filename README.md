@@ -113,3 +113,18 @@ following figure shows all the cells :
 following figures shows the differences :
 ![image](https://user-images.githubusercontent.com/125567197/220572799-a0b8963d-9da1-4b8e-b20b-453197d160d8.png)
 ![image](https://user-images.githubusercontent.com/125567197/220573167-07bd96a6-2f8a-465a-829a-f7073b6fccb1.png)
+
+(4). What is the difference between ‘simple_max.lib’ and ‘simple_min.lib' .
+simple_max.lib files considers all the maximum time constraints, maximum fanout RC delays whereas, simple_min.lib includes all the minimum timing related specifications.
+
+UNDERSTANDING SPEF FILE :
+following figure shows a glimps of spef parsing :
+![image](https://user-images.githubusercontent.com/125567197/220575295-a77469c0-6271-4e5b-b768-20304626db07.png)
+
+EXERCISE - 2 :
+
+Following figure shows the Slack Computation (STA Text Report):
+![14](https://user-images.githubusercontent.com/125567197/220575875-b5543ed4-05cc-462f-9084-50c308bfacbe.png)
+
+DAY - 3 :
+
