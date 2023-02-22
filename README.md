@@ -213,3 +213,4 @@ Now, let us perform Slack Computation and generate the STA Text Report :
 ![08](https://user-images.githubusercontent.com/125567197/220621134-5856d6e8-f951-404d-9cb0-7dc85e0115d7.png)
 
 The design and timing arc is as shown :
+![20230222_180848](https://user-images.githubusercontent.com/125567197/220622574-9611deb1-0e8a-4924-b5de-d67decc24c79.jpg)
