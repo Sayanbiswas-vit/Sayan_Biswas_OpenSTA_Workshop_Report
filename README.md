@@ -4,9 +4,9 @@ OpenSTA 5-Day Workshop Report - Team VSDIAT- Kunal Ghosh, Vikas Sachdeva
 SIGN-OFF TIMING ANALYSIS
 ![image](https://user-images.githubusercontent.com/125567197/220543510-934adf86-52b7-441a-b6bc-d2eba1dd7d2f.png)
 
-                                                          :  TABLE OF CONTENT  :
+                                            :  TABLE OF CONTENT  :
 
-                                                           : INTRODUCTION TO STA :
+                                            : INTRODUCTION TO STA :
   Before starting, we must understand what STA means in VLSI Domain. With the rapid advancement of technology nodes in today's VLSI industries, chip area has shrinked 
 to a large extent that, it now created more complicated issues that we used to ignore earlier as their impact was negligible. A best example is the increased short-channel effects, leakage etc.,which ultimately hampers the proper functionality and speed of the circuit. Speed perhaps, is the most important and critical topic now-a-days for any engineer in vlsi industry.
   In this scenario, it is very important to analyse the timings for proper functioning of any circuit. As contrary to the chip size, the circuits have grown more complex for past few years. so, it is very tideous, complex and error prone task if done conventionally. Here comes STA tools to our rescue. STA tools are nothing but specialized tools being created to handle this complex task. STA tools are typically Exhaustive and Conservative i.e., it is "PESSIMISTIC" which allows it to rule out even the slightest errors. STA tools only works for synchronous part of the circuit. There are numerious open source STA tools available now-a-days to help the designers eg.- OpenSTA, OpenTimer etc.
@@ -45,6 +45,8 @@ Following figure shows the input design file written Verilog HDL :
 Following figure shows the input design :
 ![20230222_131220](https://user-images.githubusercontent.com/125567197/220555565-41aae663-3227-4320-abda-2fbc9331e084.jpg)
 
+CONSTRAINTS CREATION :
+
 Following figure shows the command for liberty file :
 ![03](https://user-images.githubusercontent.com/125567197/220555335-af05f447-ead5-4b61-9cea-bb2c3ba42139.png)
 
@@ -55,12 +57,32 @@ The cell - “sky130_fd_sc_hd__nand2_1" has pins: 'A' , 'B' and 'Y'.
 Following figure shows the constraint file (simple.sdc) :
 ![06](https://user-images.githubusercontent.com/125567197/220564391-86b894e3-e485-4d79-9cde-03fa5d819213.png)
 
+RUNSCRIPT FOR OpenSTA :
+
 Following figure shows the runscript file (run.tcl) :
 ![07](https://user-images.githubusercontent.com/125567197/220564620-6d731ec5-bf65-450c-b8d6-f274e56adaa1.png)
 
+SLACK CALCULATION :
 Following figure shows the command to run the timing analysis :
 ![08](https://user-images.githubusercontent.com/125567197/220564947-7f9d438a-b01c-4c74-acba-a33b4aebadce.png)
 
 Following figure shows the run-time output (Slack Calculation) :
 ![09](https://user-images.githubusercontent.com/125567197/220565328-499acc03-ff37-47ef-95ac-e4c4c27157d5.png)
 
+Now let us remove some commands in runscript and see the output :
+let us comment the link command, which will prevent the STA to link our design :
+![10](https://user-images.githubusercontent.com/125567197/220566626-6df14eba-1f2e-46cb-aef2-5541624e08b6.png)
+
+Following is the output :
+![11](https://user-images.githubusercontent.com/125567197/220566942-106f66cb-4929-4d4c-aace-a5d2f2a2fe58.png)
+
+let us now, comment the liberty file reading operation :
+![12](https://user-images.githubusercontent.com/125567197/220567115-ba4e4f6d-8fda-4bae-97c9-84f441ff2bd2.png)
+
+following is the output :
+![13](https://user-images.githubusercontent.com/125567197/220567323-2e492b69-28e8-48e4-852d-66107c931a24.png)
+
+Now, let us comment the clock creation in sdc file :
+![14](https://user-images.githubusercontent.com/125567197/220567567-eb0b1664-40e3-487c-9c0c-023184a54996.png)
+ Following is the output :
+![15](https://user-images.githubusercontent.com/125567197/220567842-5dbb6069-29aa-4c4c-941e-a8e88fe23d91.png)
