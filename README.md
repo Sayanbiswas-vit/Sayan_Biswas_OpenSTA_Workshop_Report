@@ -47,3 +47,6 @@ Following figure shows the input design :
 
 Following figure shows the command for liberty file :
 ![03](https://user-images.githubusercontent.com/125567197/220555335-af05f447-ead5-4b61-9cea-bb2c3ba42139.png)
+
+Following figure shows the “sky130_fd_sc_hd__nand2_1" cell in liberty file :
+![05](https://user-images.githubusercontent.com/125567197/220563373-c0025e0c-71e7-4e05-9e6d-f37685235b6e.png)
