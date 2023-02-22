@@ -179,3 +179,37 @@ count 7 :
 
 count 8 :
 ![image](https://user-images.githubusercontent.com/125567197/220614873-a002015e-4a75-488c-a5d0-6d4d3f5ef0db.png)
+
+
+DAY - 4 :
+
+CLOCK GATING CHECKS EXERCISE :
+
+In this lab we have included the codes for "Active High Clock Gating"
+
+This is visible in the run.tcl file as shown below :
+![01](https://user-images.githubusercontent.com/125567197/220616456-47a02d9c-1eba-4076-b431-7698bf762716.png)
+This can also be seen in Verilog HDL design file, i.e., inclusion of the clock gating :
+![02](https://user-images.githubusercontent.com/125567197/220616801-76eb88a9-6a80-4adc-b341-5f1b48929714.png)
+The constraints associated with this clock gate must also be included in the constraint file , in our case it is "s27.sdc", the glymps of which is as show below :
+![03-](https://user-images.githubusercontent.com/125567197/220617176-9f5f75fc-f6f8-4a8d-b51a-7825429cffc7.png)
+![-04](https://user-images.githubusercontent.com/125567197/220617341-57ddd913-5e47-4a9f-b970-8730794088a5.png)
+
+Now let us run the STA analysis to get STA Text Report for our model with clock gate :
+![05](https://user-images.githubusercontent.com/125567197/220618811-e0ce8f2b-e498-485c-8d65-5888386237f4.png)
+The design and timing arc is as shown :
+![20230222_175226](https://user-images.githubusercontent.com/125567197/220620589-d62b8c00-117d-471b-b17b-739d73519935.jpg)
+
+
+ASYNC PIN CHECKS EXERCISE :
+
+Following is the verilog design file :
+![07](https://user-images.githubusercontent.com/125567197/220619726-e8625ee7-2f89-488f-8301-68fa43616ceb.png)
+In order to perform Async Pin check, we must include removal and recovery constraints in the file :
+
+One can easily observe it's effect in tcl file, as shown :
+![06](https://user-images.githubusercontent.com/125567197/220620280-f18773ea-1a2a-40f6-8b76-5d5b77ccab90.png)
+Now, let us perform Slack Computation and generate the STA Text Report :
+![08](https://user-images.githubusercontent.com/125567197/220621134-5856d6e8-f951-404d-9cb0-7dc85e0115d7.png)
+
+The design and timing arc is as shown :
