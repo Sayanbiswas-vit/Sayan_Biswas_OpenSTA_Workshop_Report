@@ -239,3 +239,28 @@ Now, let us enable the CPRR in run.rcl :
 Now, let us re-compute the sclack :
 ![05](https://user-images.githubusercontent.com/125567197/220626115-3b75728f-0005-43e6-8223-a9e4123eae3d.png)
 Now, we get a value of -391.43, which got slightly improved when compared withthe case of without CPRR. Moreover, one can clearly observe other timing improvements in the paths when compared.
+
+
+ECO INSERTION :
+
+Engineering Change Order also known as "ECO".
+
+In the ECO cycle, we perform various analysis one by one for every 
+check which we need to close but not closed till PnR stage. There are specialized signoff tools that help us to analyze the issue and also suggest the changes we need to do in order to close the issue. The suggested change is captured in an eco file.
+
+So, let insert timing ECO as show below in the run.tcl file :
+![06](https://user-images.githubusercontent.com/125567197/220628030-e0ac1e03-091d-42f2-985d-a12ac323ff6f.png)
+Now, let us re-compute the slack after ECO insertion :
+![07](https://user-images.githubusercontent.com/125567197/220628185-6b721872-6c9e-47b7-8561-756c58587a7d.png)
+
+Following Figures shows the difference in the "s27.v" and "s27_eco.v" :
+![08-A](https://user-images.githubusercontent.com/1255![09-A](https://user-images.githubusercontent.com/125567197/220628605-8c0e1884-1657-480a-9db7-5bae6c6b0f85.png)67197/220628503-f8dd7c52-0605-4d52-a838-08928722f0ac.png)
+![08-B](https://user-images.githubusercontent.com/125567197/220628557-51599df6-ab07-4c01-b1a9-093a2876da5f.png)
+
+
+![09-A](https://user-images.githubusercontent.com/125567197/220628693-5e70693b-3095-4cba-8b4e-5fb67d4baeec.png)
+![09-B](https://user-images.githubusercontent.com/125567197/220628720-f09fb011-9830-41af-a5ce-f1d8eae7caf9.png)
+![09-C](https://user-images.githubusercontent.com/125567197/220628752-45316706-517c-427f-b010-7071edfd9175.png)
+
+Finally, let us compare the Slack Improvemet "Before and After ECO Insertion" side-by-side :
+![10](https://user-images.githubusercontent.com/125567197/220628945-c2b38b13-845e-41da-a74d-b896aec0c6e1.png)
