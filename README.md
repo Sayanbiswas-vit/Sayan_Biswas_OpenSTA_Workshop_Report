@@ -1,12 +1,12 @@
 # Sayan_Biswas_OpenSTA_Workshop_Report
-OpenSTA 5-Day Workshop Report - Team VSDIAT- Kunal Ghosh, Vikas Sachdeva
+# OpenSTA 5-Day Workshop Report - Team VSDIAT- Kunal Ghosh, Vikas Sachdeva
 
-SIGN-OFF TIMING ANALYSIS
+# SIGN-OFF TIMING ANALYSIS
 ![image](https://user-images.githubusercontent.com/125567197/220543510-934adf86-52b7-441a-b6bc-d2eba1dd7d2f.png)
 
-                                            :  TABLE OF CONTENT  :
+  #                                          :  TABLE OF CONTENT  :
 
-                                            : INTRODUCTION TO STA :
+  #                                          : INTRODUCTION TO STA :
   Before starting, we must understand what STA means in VLSI Domain. With the rapid advancement of technology nodes in today's VLSI industries, chip area has shrinked 
 to a large extent that, it now created more complicated issues that we used to ignore earlier as their impact was negligible. A best example is the increased short-channel effects, leakage etc.,which ultimately hampers the proper functionality and speed of the circuit. Speed perhaps, is the most important and critical topic now-a-days for any engineer in vlsi industry.
   In this scenario, it is very important to analyse the timings for proper functioning of any circuit. As contrary to the chip size, the circuits have grown more complex for past few years. so, it is very tideous, complex and error prone task if done conventionally. Here comes STA tools to our rescue. STA tools are nothing but specialized tools being created to handle this complex task. STA tools are typically Exhaustive and Conservative i.e., it is "PESSIMISTIC" which allows it to rule out even the slightest errors. STA tools only works for synchronous part of the circuit. There are numerious open source STA tools available now-a-days to help the designers eg.- OpenSTA, OpenTimer etc.
@@ -19,16 +19,16 @@ to a large extent that, it now created more complicated issues that we used to i
   The STA tools works simply checks various timing constraints being fed to it and accordingly generate the result as timing is "MET" or "VIOLATED". the tool uses the relation : SLACK = REQUIRED TIME - ACTUAL ARRIVAL TIME. we have several set of commands that can be used in the constraint file to impose the required constraints.
 
 
-DAY - 1 :
+# DAY - 1 :
 
-OpenSTA INTRODUCTION AND BASICS :
+# OpenSTA INTRODUCTION AND BASICS :
 
 OpenSTA is a gate level static timing verifier. As a stand-alone executable it can be used to verify the timing of a design using standard file formats. An STA tool takes design, standard cell, constraints as input and perform timing checks on the design.
 ![image](https://user-images.githubusercontent.com/125567197/220551822-db087d61-78cc-407e-8fe4-97856dc0ec3c.png)
 
 Above figure show the typical OpenSTA Network.
 
-INPUTS OF OpenSTA :
+# INPUTS OF OpenSTA :
 
 (1).Netlist - .v file
 
@@ -45,7 +45,7 @@ Following figure shows the input design file written Verilog HDL :
 Following figure shows the input design :
 ![20230222_131220](https://user-images.githubusercontent.com/125567197/220555565-41aae663-3227-4320-abda-2fbc9331e084.jpg)
 
-CONSTRAINTS CREATION :
+# CONSTRAINTS CREATION :
 
 Following figure shows the command for liberty file :
 ![03](https://user-images.githubusercontent.com/125567197/220555335-af05f447-ead5-4b61-9cea-bb2c3ba42139.png)
@@ -57,12 +57,12 @@ The cell - “sky130_fd_sc_hd__nand2_1" has pins: 'A' , 'B' and 'Y'.
 Following figure shows the constraint file (simple.sdc) :
 ![06](https://user-images.githubusercontent.com/125567197/220564391-86b894e3-e485-4d79-9cde-03fa5d819213.png)
 
-RUNSCRIPT FOR OpenSTA :
+# RUNSCRIPT FOR OpenSTA :
 
 Following figure shows the runscript file (run.tcl) :
 ![07](https://user-images.githubusercontent.com/125567197/220564620-6d731ec5-bf65-450c-b8d6-f274e56adaa1.png)
 
-SLACK CALCULATION :
+# SLACK CALCULATION :
 
 Following figure shows the command to run the timing analysis :
 ![08](https://user-images.githubusercontent.com/125567197/220564947-7f9d438a-b01c-4c74-acba-a33b4aebadce.png)
@@ -89,14 +89,14 @@ Now, let us comment the clock creation in sdc file :
 ![15](https://user-images.githubusercontent.com/125567197/220567842-5dbb6069-29aa-4c4c-941e-a8e88fe23d91.png)
 
 
-DAY - 2 :
+# DAY - 2 :
 
-UNDERSTANDING LIBERTY FILE :
+# UNDERSTANDING LIBERTY FILE :
 
 ![image](https://user-images.githubusercontent.com/125567197/220569160-7fd15eee-5530-4269-924c-22d81e2c1f62.png)
 ![image](https://user-images.githubusercontent.com/125567197/220569340-cc31174d-bc79-4638-9a3c-d5d603cbe85a.png)
 
-EXERCISE – 1 :
+# EXERCISE – 1 :
 
 (1). Find all the cells in simple_max.lib.
 following figure show the cell count to be 211 :
@@ -117,18 +117,18 @@ following figures shows the differences :
 (4). What is the difference between ‘simple_max.lib’ and ‘simple_min.lib' .
 simple_max.lib files considers all the maximum time constraints, maximum fanout RC delays whereas, simple_min.lib includes all the minimum timing related specifications.
 
-UNDERSTANDING SPEF FILE :
+# UNDERSTANDING SPEF FILE :
 following figure shows a glimps of spef parsing :
 ![image](https://user-images.githubusercontent.com/125567197/220575295-a77469c0-6271-4e5b-b768-20304626db07.png)
 
-EXERCISE - 2 :
+# EXERCISE - 2 :
 
 Following figure shows the Slack Computation (STA Text Report):
 ![14](https://user-images.githubusercontent.com/125567197/220575875-b5543ed4-05cc-462f-9084-50c308bfacbe.png)
 
-DAY - 3 :
+# DAY - 3 :
 
-UNDERSTANDING SLACK COMPUTATION :
+# UNDERSTANDING SLACK COMPUTATION :
 
 Following figure shows the design used :
 ![01](https://user-images.githubusercontent.com/125567197/220577468-842fec87-6848-4787-bcae-d8f88c909409.png)
@@ -145,7 +145,7 @@ F1:CK→U6→U5:A2→U7:A2→F2:D
 
 for the same design, various paths were choosen and slack report for the corresponding paths were captured.
 
-EXERCISE :
+# EXERCISE :
 
 Change the number of paths being reported to 100
 1. report_checks –from F1/CK -endpoint_count 100
@@ -181,9 +181,9 @@ count 8 :
 ![image](https://user-images.githubusercontent.com/125567197/220614873-a002015e-4a75-488c-a5d0-6d4d3f5ef0db.png)
 
 
-DAY - 4 :
+# DAY - 4 :
 
-CLOCK GATING CHECKS EXERCISE :
+# CLOCK GATING CHECKS EXERCISE :
 
 In this lab we have included the codes for "Active High Clock Gating"
 
@@ -201,7 +201,7 @@ The design and timing arc is as shown :
 ![20230222_175226](https://user-images.githubusercontent.com/125567197/220620589-d62b8c00-117d-471b-b17b-739d73519935.jpg)
 
 
-ASYNC PIN CHECKS EXERCISE :
+# ASYNC PIN CHECKS EXERCISE :
 
 Following is the verilog design file :
 ![07](https://user-images.githubusercontent.com/125567197/220619726-e8625ee7-2f89-488f-8301-68fa43616ceb.png)
@@ -216,11 +216,11 @@ The design and timing arc is as shown :
 ![20230222_180848](https://user-images.githubusercontent.com/125567197/220622574-9611deb1-0e8a-4924-b5de-d67decc24c79.jpg)
 
 
-DAY - 5 :
+# DAY - 5 :
 
 Slack Computation procedure was revisited and a quick revision was done on 'how to understand the STA Text Report'.
 
-CPPR :
+# CPPR :
 
 "Common Path Pessimism Removal" also known as CPPR is one of the constraints or techniques used to remove the common path elements, as this particular path is taken into account multiple times while STA considers various timing arcs.
 
@@ -241,7 +241,7 @@ Now, let us re-compute the sclack :
 Now, we get a value of -391.43, which got slightly improved when compared withthe case of without CPRR. Moreover, one can clearly observe other timing improvements in the paths when compared.
 
 
-ECO INSERTION :
+# ECO INSERTION :
 
 Engineering Change Order also known as "ECO".
 
@@ -254,13 +254,7 @@ Now, let us re-compute the slack after ECO insertion :
 ![07](https://user-images.githubusercontent.com/125567197/220628185-6b721872-6c9e-47b7-8561-756c58587a7d.png)
 
 Following Figures shows the difference in the "s27.v" and "s27_eco.v" :
-![08-A](https://user-images.githubusercontent.com/1255![09-A](https://user-images.githubusercontent.com/125567197/220628605-8c0e1884-1657-480a-9db7-5bae6c6b0f85.png)67197/220628503-f8dd7c52-0605-4d52-a838-08928722f0ac.png)
-![08-B](https://user-images.githubusercontent.com/125567197/220628557-51599df6-ab07-4c01-b1a9-093a2876da5f.png)
-
-
-![09-A](https://user-images.githubusercontent.com/125567197/220628693-5e70693b-3095-4cba-8b4e-5fb67d4baeec.png)
-![09-B](https://user-images.githubusercontent.com/125567197/220628720-f09fb011-9830-41af-a5ce-f1d8eae7caf9.png)
-![09-C](https://user-images.githubusercontent.com/125567197/220628752-45316706-517c-427f-b010-7071edfd9175.png)
+![image](https://user-images.githubusercontent.com/125567197/220631441-a2014c8e-5935-45ef-a3c8-a6ed01834a8a.png)
 
 Finally, let us compare the Slack Improvemet "Before and After ECO Insertion" side-by-side :
 ![10](https://user-images.githubusercontent.com/125567197/220628945-c2b38b13-845e-41da-a74d-b896aec0c6e1.png)
