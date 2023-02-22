@@ -134,6 +134,7 @@ Following figure shows the design used :
 ![01](https://user-images.githubusercontent.com/125567197/220577468-842fec87-6848-4787-bcae-d8f88c909409.png)
 
 follwing are some of the paths we can easily notice :
+
 F1:CK→U3→U4→U6:A2→U7:A1→F2:D
 
 F1:CK→U6→U4→U5:A1→U7:A2→F2:D
