@@ -128,3 +128,28 @@ Following figure shows the Slack Computation (STA Text Report):
 
 DAY - 3 :
 
+UNDERSTANDING SLACK COMPUTATION :
+
+Following figure shows the design used :
+![01](https://user-images.githubusercontent.com/125567197/220577468-842fec87-6848-4787-bcae-d8f88c909409.png)
+
+follwing are some of the paths we can easily notice :
+F1:CK→U3→U4→U6:A2→U7:A1→F2:D
+
+F1:CK→U6→U4→U5:A1→U7:A2→F2:D
+
+F1:CK→U6:A1→U7:A1→F2:D
+
+F1:CK→U6→U5:A2→U7:A2→F2:D
+
+for the same design, various paths were choosen and slack report for the corresponding paths were captured.
+
+EXERCISE :
+
+Change the number of paths being reported to 100
+1. report_checks –from F1/CK -endpoint_count 100
+2. Analyze each path in detail and understand
+
+Following STA Text Report was obtained for count 100 :
+![02(100)](https://user-images.githubusercontent.com/125567197/220578733-9e5441d4-158d-446a-95ca-fd8da0f5a5b9.png)
+
