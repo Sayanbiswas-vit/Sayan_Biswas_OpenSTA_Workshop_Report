@@ -35,3 +35,7 @@ INPUTS OF OpenSTA :
 (2).SDC or Constraint file - .sdc file
 
 (3).Logic Libraries - .lib file
+
+Following figure shows the command and the path for the files associated :
+![01](https://user-images.githubusercontent.com/125567197/220553934-37ccf7da-03d4-42fc-ba00-c2020fe2cb15.png)
+
