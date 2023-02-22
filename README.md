@@ -39,3 +39,11 @@ INPUTS OF OpenSTA :
 Following figure shows the command and the path for the files associated :
 ![01](https://user-images.githubusercontent.com/125567197/220553934-37ccf7da-03d4-42fc-ba00-c2020fe2cb15.png)
 
+Following figure shows the input design file written Verilog HDL :
+![02](https://user-images.githubusercontent.com/125567197/220554348-ff97551d-e22c-4736-ae85-c499ae828312.png)
+
+Following figure shows the input design :
+![20230222_131220](https://user-images.githubusercontent.com/125567197/220555565-41aae663-3227-4320-abda-2fbc9331e084.jpg)
+
+Following figure shows the command for liberty file :
+![03](https://user-images.githubusercontent.com/125567197/220555335-af05f447-ead5-4b61-9cea-bb2c3ba42139.png)
