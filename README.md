@@ -1,10 +1,10 @@
-# Sayan_Biswas_OpenSTA_Workshop_Report
+## Sayan_Biswas_OpenSTA_Workshop_Report
 OpenSTA 5-Day Workshop Report - Team VSDIAT- Kunal Ghosh, Vikas Sachdeva
 
-# SIGN-OFF TIMING ANALYSIS
+## SIGN-OFF TIMING ANALYSIS
 ![image](https://user-images.githubusercontent.com/125567197/220543510-934adf86-52b7-441a-b6bc-d2eba1dd7d2f.png)
 
-  #                                          :  TABLE OF CONTENT  :
+  ##                                          :  TABLE OF CONTENT  :
 # 1. Day - 1 :
   •	OpenSTA INTRODUCTION AND BASICS
   •	INPUTS OF OpenSTA
@@ -35,7 +35,7 @@ OpenSTA 5-Day Workshop Report - Team VSDIAT- Kunal Ghosh, Vikas Sachdeva
 # 7. AUTHOR
 
 
-  #                                          : INTRODUCTION TO STA :
+  ##                                          : INTRODUCTION TO STA :
   Before starting, we must understand what STA means in VLSI Domain. With the rapid advancement of technology nodes in today's VLSI industries, chip area has shrinked 
 to a large extent that, it now created more complicated issues that we used to ignore earlier as their impact was negligible. A best example is the increased short-channel effects, leakage etc.,which ultimately hampers the proper functionality and speed of the circuit. Speed perhaps, is the most important and critical topic now-a-days for any engineer in vlsi industry.
   In this scenario, it is very important to analyse the timings for proper functioning of any circuit. As contrary to the chip size, the circuits have grown more complex for past few years. so, it is very tideous, complex and error prone task if done conventionally. Here comes STA tools to our rescue. STA tools are nothing but specialized tools being created to handle this complex task. STA tools are typically Exhaustive and Conservative i.e., it is "PESSIMISTIC" which allows it to rule out even the slightest errors. STA tools only works for synchronous part of the circuit. There are numerious open source STA tools available now-a-days to help the designers eg.- OpenSTA, OpenTimer etc.
@@ -48,7 +48,7 @@ to a large extent that, it now created more complicated issues that we used to i
   The STA tools works simply checks various timing constraints being fed to it and accordingly generate the result as timing is "MET" or "VIOLATED". the tool uses the relation : SLACK = REQUIRED TIME - ACTUAL ARRIVAL TIME. we have several set of commands that can be used in the constraint file to impose the required constraints.
 
 
-# DAY - 1 :
+## DAY - 1 :
 
 # OpenSTA INTRODUCTION AND BASICS :
 
@@ -118,7 +118,7 @@ Now, let us comment the clock creation in sdc file :
 ![15](https://user-images.githubusercontent.com/125567197/220567842-5dbb6069-29aa-4c4c-941e-a8e88fe23d91.png)
 
 
-# DAY - 2 :
+## DAY - 2 :
 
 # UNDERSTANDING LIBERTY FILE :
 
@@ -155,7 +155,7 @@ following figure shows a glimps of spef parsing :
 Following figure shows the Slack Computation (STA Text Report):
 ![14](https://user-images.githubusercontent.com/125567197/220575875-b5543ed4-05cc-462f-9084-50c308bfacbe.png)
 
-# DAY - 3 :
+## DAY - 3 :
 
 # UNDERSTANDING SLACK COMPUTATION :
 
@@ -210,7 +210,7 @@ count 8 :
 ![image](https://user-images.githubusercontent.com/125567197/220614873-a002015e-4a75-488c-a5d0-6d4d3f5ef0db.png)
 
 
-# DAY - 4 :
+## DAY - 4 :
 
 # CLOCK GATING CHECKS EXERCISE :
 
@@ -245,7 +245,7 @@ The design and timing arc is as shown :
 ![20230222_180848](https://user-images.githubusercontent.com/125567197/220622574-9611deb1-0e8a-4924-b5de-d67decc24c79.jpg)
 
 
-# DAY - 5 :
+## DAY - 5 :
 
 Slack Computation procedure was revisited and a quick revision was done on 'how to understand the STA Text Report'.
 
@@ -289,12 +289,12 @@ Finally, let us compare the Slack Improvemet "Before and After ECO Insertion" si
 ![10](https://user-images.githubusercontent.com/125567197/220628945-c2b38b13-845e-41da-a74d-b896aec0c6e1.png)
 
 
-# ACKNOWLEDGEMENTS :
+## ACKNOWLEDGEMENTS :
 
 1. Kunal Ghosh, Co-founder of VLSI System Design (VSD) Corp. Pvt. Ltd.
 2. Vikas Sachdeva, Advisor, Tech and VLSI Coach, Trainer and Innovator at vlsideepdive.
 
-# AUTHOR :
+## AUTHOR :
 
 Sayan Biswas, M.Tech in VLSI Design (2022-2024), VIT-Vellore, Vellore, Tamil Nadu-632014, INDIA.
 
