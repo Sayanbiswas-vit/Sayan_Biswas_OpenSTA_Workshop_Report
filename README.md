@@ -26,3 +26,10 @@ OpenSTA Introduction and Basics :
 OpenSTA is a gate level static timing verifier. As a stand-alone executable it can be used to verify the timing of a design using standard file formats. An STA tool takes design, standard cell, constraints as input and perform timing checks on the design.
 ![image](https://user-images.githubusercontent.com/125567197/220551822-db087d61-78cc-407e-8fe4-97856dc0ec3c.png)
 
+Inputs of OpenSTA :
+
+(1).Netlist - .v file
+
+(2).SDC or Constraint file - .sdc file
+
+(3).Logic Libraries - .lib file
