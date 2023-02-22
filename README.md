@@ -6,28 +6,43 @@ OpenSTA 5-Day Workshop Report - Team VSDIAT- Kunal Ghosh, Vikas Sachdeva
 
   ##                                          :  TABLE OF CONTENT  :
 # 1. Day - 1 :
+  
   •	OpenSTA INTRODUCTION AND BASICS
+  
   •	INPUTS OF OpenSTA
+  
   •	CONSTRAINTS CREATION
+  
   •	RUNSCRIPT FOR OpenSTA
+  
   •	SLACK CALCULATION
   
 # 2. Day - 2 :
+  
   •	UNDERSTANDING LIBERTY FILE
+  
   •	EXERCISE – 1
+  
   •	UNDERSTANDING SPEF FILE
+  
   •	EXERCISE – 2
   
 # 3. Day - 3 :
+  
   •	UNDERSTANDING SLACK COMPUTATION
+  
   •	EXERCISE
 
 # 4. Day - 4 :
+  
   •	CLOCK GATING CHECKS EXERCISE
+  
   •	ASYNC PIN CHECKS EXERCISE
 
 # 5. Day - 5 :
+  
   •	CPPR
+  
   •	ECO INSERTION
 
 # 6. ACKNOWLEDGEMENTS
