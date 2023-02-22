@@ -1,10 +1,39 @@
 # Sayan_Biswas_OpenSTA_Workshop_Report
-# OpenSTA 5-Day Workshop Report - Team VSDIAT- Kunal Ghosh, Vikas Sachdeva
+OpenSTA 5-Day Workshop Report - Team VSDIAT- Kunal Ghosh, Vikas Sachdeva
 
 # SIGN-OFF TIMING ANALYSIS
 ![image](https://user-images.githubusercontent.com/125567197/220543510-934adf86-52b7-441a-b6bc-d2eba1dd7d2f.png)
 
   #                                          :  TABLE OF CONTENT  :
+# 1. Day - 1 :
+  •	OpenSTA INTRODUCTION AND BASICS
+  •	INPUTS OF OpenSTA
+  •	CONSTRAINTS CREATION
+  •	RUNSCRIPT FOR OpenSTA
+  •	SLACK CALCULATION
+  
+# 2. Day - 2 :
+  •	UNDERSTANDING LIBERTY FILE
+  •	EXERCISE – 1
+  •	UNDERSTANDING SPEF FILE
+  •	EXERCISE – 2
+  
+# 3. Day - 3 :
+  •	UNDERSTANDING SLACK COMPUTATION
+  •	EXERCISE
+
+# 4. Day - 4 :
+  •	CLOCK GATING CHECKS EXERCISE
+  •	ASYNC PIN CHECKS EXERCISE
+
+# 5. Day - 5 :
+  •	CPPR
+  •	ECO INSERTION
+
+# 6. ACKNOWLEDGEMENTS
+
+# 7. AUTHOR
+
 
   #                                          : INTRODUCTION TO STA :
   Before starting, we must understand what STA means in VLSI Domain. With the rapid advancement of technology nodes in today's VLSI industries, chip area has shrinked 
@@ -258,3 +287,15 @@ Following Figures shows the difference in the "s27.v" and "s27_eco.v" :
 
 Finally, let us compare the Slack Improvemet "Before and After ECO Insertion" side-by-side :
 ![10](https://user-images.githubusercontent.com/125567197/220628945-c2b38b13-845e-41da-a74d-b896aec0c6e1.png)
+
+
+# ACKNOWLEDGEMENTS :
+
+1. Kunal Ghosh, Co-founder of VLSI System Design (VSD) Corp. Pvt. Ltd.
+2. Vikas Sachdeva, Advisor, Tech and VLSI Coach, Trainer and Innovator at vlsideepdive.
+
+# AUTHOR :
+
+Sayan Biswas, M.Tech in VLSI Design (2022-2024), VIT-Vellore, Vellore, Tamil Nadu-632014, INDIA.
+
+Contact: saybi2311697@gmail.com
