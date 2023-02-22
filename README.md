@@ -21,13 +21,14 @@ to a large extent that, it now created more complicated issues that we used to i
 
 DAY - 1 :
 
-OpenSTA Introduction and Basics :
+OpenSTA INTRODUCTION AND BASICS :
 
 OpenSTA is a gate level static timing verifier. As a stand-alone executable it can be used to verify the timing of a design using standard file formats. An STA tool takes design, standard cell, constraints as input and perform timing checks on the design.
 ![image](https://user-images.githubusercontent.com/125567197/220551822-db087d61-78cc-407e-8fe4-97856dc0ec3c.png)
 
-above figure show the typical OpenSTA Network.
-Inputs of OpenSTA :
+Above figure show the typical OpenSTA Network.
+
+INPUTS OF OpenSTA :
 
 (1).Netlist - .v file
 
