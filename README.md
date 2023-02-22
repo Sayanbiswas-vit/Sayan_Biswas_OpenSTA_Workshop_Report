@@ -214,3 +214,28 @@ Now, let us perform Slack Computation and generate the STA Text Report :
 
 The design and timing arc is as shown :
 ![20230222_180848](https://user-images.githubusercontent.com/125567197/220622574-9611deb1-0e8a-4924-b5de-d67decc24c79.jpg)
+
+
+DAY - 5 :
+
+Slack Computation procedure was revisited and a quick revision was done on 'how to understand the STA Text Report'.
+
+CPPR :
+
+"Common Path Pessimism Removal" also known as CPPR is one of the constraints or techniques used to remove the common path elements, as this particular path is taken into account multiple times while STA considers various timing arcs.
+
+Below figure shows the circuit of interest :
+![image](https://user-images.githubusercontent.com/125567197/220624401-bfeb8f41-b3f6-406b-9459-0169de6ea37d.png)
+
+Now, let us compute the Slack 'WITHOUT mentioning (turning ON) CPRR in run.tcl file' :
+![03](https://user-images.githubusercontent.com/125567197/220625479-dc6e5253-7a25-430b-a540-1b9d76b88581.png)
+we observed a value of -398.10
+
+Now, let us enable the CPRR in run.rcl :
+
+(By, replacing 0 with 1)
+![04](https://user-images.githubusercontent.com/125567197/220625993-e66bf47a-d883-4cb3-9934-e34f840ebfb6.png)
+
+Now, let us re-compute the sclack :
+![05](https://user-images.githubusercontent.com/125567197/220626115-3b75728f-0005-43e6-8223-a9e4123eae3d.png)
+Now, we get a value of -391.43, which got slightly improved when compared withthe case of without CPRR. Moreover, one can clearly observe other timing improvements in the paths when compared.
