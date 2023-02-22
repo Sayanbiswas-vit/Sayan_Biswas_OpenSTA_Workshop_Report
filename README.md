@@ -49,4 +49,18 @@ Following figure shows the command for liberty file :
 ![03](https://user-images.githubusercontent.com/125567197/220555335-af05f447-ead5-4b61-9cea-bb2c3ba42139.png)
 
 Following figure shows the “sky130_fd_sc_hd__nand2_1" cell in liberty file :
-![05](https://user-images.githubusercontent.com/125567197/220563373-c0025e0c-71e7-4e05-9e6d-f37685235b6e.png)
+![04](https://user-images.githubusercontent.com/125567197/220563517-70ad04c3-e74c-4698-aa83-be7c2c77cb05.png)
+The cell - “sky130_fd_sc_hd__nand2_1" has pins: 'A' , 'B' and 'Y'.
+
+Following figure shows the constraint file (simple.sdc) :
+![06](https://user-images.githubusercontent.com/125567197/220564391-86b894e3-e485-4d79-9cde-03fa5d819213.png)
+
+Following figure shows the runscript file (run.tcl) :
+![07](https://user-images.githubusercontent.com/125567197/220564620-6d731ec5-bf65-450c-b8d6-f274e56adaa1.png)
+
+Following figure shows the command to run the timing analysis :
+![08](https://user-images.githubusercontent.com/125567197/220564947-7f9d438a-b01c-4c74-acba-a33b4aebadce.png)
+
+Following figure shows the run-time output (Slack Calculation) :
+![09](https://user-images.githubusercontent.com/125567197/220565328-499acc03-ff37-47ef-95ac-e4c4c27157d5.png)
+
