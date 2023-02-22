@@ -157,4 +157,4 @@ Following STA Text Report was obtained for count 100 :
 Following figures shows the STA Text Report for various test cases :
 
 count 1 :
-![image](https://user-images.githubusercontent.com/125567197/220582115-f3e91481-acc7-4234-b53b-f799eca37e41.png)
+
