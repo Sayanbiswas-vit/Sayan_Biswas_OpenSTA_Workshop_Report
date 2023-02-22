@@ -17,3 +17,10 @@ to a large extent that, it now created more complicated issues that we used to i
   (3).Logic Libraries
   
   The STA tools works simply checks various timing constraints being fed to it and accordingly generate the result as timing is "MET" or "VIOLATED". the tool uses the relation : SLACK = REQUIRED TIME - ACTUAL ARRIVAL TIME. we have several set of commands that can be used in the constraint file to impose the required constraints.
+
+
+DAY - 1 :
+
+OpenSTA Introduction and Basics :
+
+OpenSTA is a gate level static timing verifier. As a stand-alone executable it can be used to verify the timing of a design using standard file formats. An STA tool takes design, standard cell, constraints as input and perform timing checks on the design.
