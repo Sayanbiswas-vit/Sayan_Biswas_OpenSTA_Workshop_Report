@@ -154,3 +154,7 @@ Change the number of paths being reported to 100
 Following STA Text Report was obtained for count 100 :
 ![02(100)](https://user-images.githubusercontent.com/125567197/220578733-9e5441d4-158d-446a-95ca-fd8da0f5a5b9.png)
 
+Following figures shows the STA Text Report for various test cases :
+
+count 1 :
+![image](https://user-images.githubusercontent.com/125567197/220582115-f3e91481-acc7-4234-b53b-f799eca37e41.png)
