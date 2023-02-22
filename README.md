@@ -87,3 +87,29 @@ Now, let us comment the clock creation in sdc file :
 ![14](https://user-images.githubusercontent.com/125567197/220567567-eb0b1664-40e3-487c-9c0c-023184a54996.png)
  Following is the output :
 ![15](https://user-images.githubusercontent.com/125567197/220567842-5dbb6069-29aa-4c4c-941e-a8e88fe23d91.png)
+
+
+DAY - 2 :
+
+UNDERSTANDING LIBERTY FILE :
+
+![image](https://user-images.githubusercontent.com/125567197/220569160-7fd15eee-5530-4269-924c-22d81e2c1f62.png)
+![image](https://user-images.githubusercontent.com/125567197/220569340-cc31174d-bc79-4638-9a3c-d5d603cbe85a.png)
+
+EXERCISE – 1 :
+
+(1). Find all the cells in simple_max.lib.
+following figure show the cell count to be 211 :
+![01](https://user-images.githubusercontent.com/125567197/220569834-84e2425c-b9de-4393-acf4-367d265874e3.png)
+
+(2). Find all the pins of the cell NAND2_X1 in simple_max.lib.
+following figure shows all the cells :
+![02](https://user-images.githubusercontent.com/125567197/220571155-af45221c-539d-4d16-8dcd-a7f74c74411b.png)
+![03](https://user-images.githubusercontent.com/125567197/220571208-fe7364d3-1d3a-4330-8142-e54108b6b245.png)
+![06](https://user-images.githubusercontent.com/125567197/220571255-9242238d-085a-4f43-9e5c-bb7f4034db63.png)
+![07](https://user-images.githubusercontent.com/125567197/220571280-bed4e3a9-8173-4813-94db-673b260965fd.png)
+
+(3).What difference you see between NAND2_X1 and NAND3_X1.
+following figures shows the differences :
+![image](https://user-images.githubusercontent.com/125567197/220572799-a0b8963d-9da1-4b8e-b20b-453197d160d8.png)
+![image](https://user-images.githubusercontent.com/125567197/220573167-07bd96a6-2f8a-465a-829a-f7073b6fccb1.png)
