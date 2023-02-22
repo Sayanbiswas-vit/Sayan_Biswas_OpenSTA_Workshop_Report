@@ -2,7 +2,7 @@
 OpenSTA 5-Day Workshop Report - Team VSDIAT- Kunal Ghosh, Vikas Sachdeva
 
 ## SIGN-OFF TIMING ANALYSIS
-![image](https://user-images.githubusercontent.com/125567197/220543510-934adf86-52b7-441a-b6bc-d2eba1dd7d2f.png)
+![image](https://user-images.githubusercontent.com/125567197/220639830-210d015d-ca14-4c7e-8c81-987e86b05a9d.png)
 
   ##                                          :  TABLE OF CONTENT  :
 # 1. Day - 1 :
